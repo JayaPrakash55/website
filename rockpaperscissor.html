@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            rock paper and scissor
+        </title>
+        <style>
+            body{
+                background-color: rgb(25, 25, 25);
+                color: white;
+                border: none;
+                padding-left: 20px;
+            }
+
+            .title{
+                font-size: 30px;
+                font-weight: bold;
+            }
+            .move-icon{
+                height: 50px;
+            }
+            .move-button{
+                background-color: transparent;
+                border: 3px solid white;
+                width: 120px;
+                height: 120px;
+                border-radius: 60px;
+                cursor: pointer;
+                margin-right: 10px;
+            }
+
+            .result{
+                font-size: 25px;
+                font-weight: bold;
+            }
+            .reset-button{
+                border: none;
+                
+                padding: 10px 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="title">  Game of rock paper and scissor </p>
+
+
+        <button onclick="
+
+        playGame('rock');
+
+        " class="move-button"><img src="images/rock-emoji.png" class="move-icon"></button>
+        
+        
+        
+        <button onclick="
+        
+        playGame('paper');
+
+       " class="move-button"><img src="images/paper-emoji.png" class="move-icon" alt=""></button>
+
+
+        <button onclick="
+           
+        playGame('scissor');
+        
+        " class="move-button"
+        ><img src="images/scissors-emoji.png" class="move-icon"></button>
+
+        <p class="js-result result"></p>
+        <p class="js-moves"></p>
+
+        <p class="js-score"></p>
+
+        <button onclick="
+        score.wins=0;
+        score.lose=0;
+        score.ties=0;
+        updateScoreElement();
+        " class="reset-button">Reset</button>
+        
+
+
+
+
+        <script src="rock-paper-scissor.js"></script>
+    </body>
+</html>
